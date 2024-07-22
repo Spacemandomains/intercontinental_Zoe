@@ -52,3 +52,42 @@ images.forEach(image => {
             });
         });
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const audio = new Audio('https://storage.googleapis.com/intercon_zoe_sounds/commercial-aircraft-pre-flight-instructions-56658.mp3');
+        let isPlaying = false;
+    
+        function playAudio() {
+            if (!isPlaying) {
+                audio.play().catch(error => {
+                    console.error('Error playing audio:', error);
+                });
+                isPlaying = true;
+            }
+        }
+    
+        function stopAudio() {
+            if (isPlaying) {
+                audio.pause();
+                audio.currentTime = 0; // Reset audio to the beginning
+                isPlaying = false;
+            }
+        }
+    
+        document.addEventListener('mouseover', function () {
+            playAudio();
+        });
+    
+        document.querySelectorAll('.card-image').forEach(card => {
+            card.addEventListener('mouseover', function () {
+                stopAudio();
+            });
+        });
+    
+        document.querySelectorAll('.card-image').forEach(card => {
+            card.addEventListener('mouseout', function () {
+                playAudio();
+            });
+        });
+    });
+    
