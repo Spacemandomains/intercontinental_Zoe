@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#1 Travel Youtuber</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display+SC:wght@400;900&display=swap" rel="stylesheet">
+</head>
+    <!-- Navigation Bar -->
+    <nav class="w-full py-4">
+        <div class="flex items-center justify-start space-x-4">
+            <a href="https://www.youtube.com/@INTERNATIONALZOE" class="nav-link playfair-display-sc-regular">Youtube</a>
+            <a href="https://www.instagram.com/international.zoe/" class="nav-link playfair-display-sc-regular">Instagram</a>
+            <a href="https://www.tiktok.com/@internationalzoebwtv" class="nav-link playfair-display-sc-regular">Tiktok</a>
+            <a href="https://www.patreon.com/internationalzoe" class="nav-link playfair-display-sc-regular">Patreon</a>
+            <a href="https://www.paypal.com/paypalme/barberworldtv" class="nav-link playfair-display-sc-regular">Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="w-full py-12">
+        <div class="text-center">
+            <h1 class="text-5xl playfair-display-sc-black text-white">
+                INTERCONTINENTAL <span class="text-gold">Z</span><span class="text-blue">O</span><span class="text-green">E</span>
+            </h1>
+            <p class="text-lg mb-8 playfair-display-sc-regular text-white">Signup to receive the latest updates and offers directly to your inbox.</p>
+            <form name="email-signup" method="POST" data-netlify="true" class="w-full max-w-lg mx-auto">
+                <input type="hidden" name="form-name" value="email-signup" />
+                <div class="input-container relative flex items-center">
+                    <div class="icon-wrapper absolute left-4 top-1/2 transform -translate-y-1/2">
+                        <i class="fa-solid fa-envelope text-gray-500 text-xl"></i>
+                    </div>
+                    <input type="email" id="email" name="email" class="email-input pl-12" placeholder="Enter your email here..." required />
+                    <button type="submit" class="submit-btn">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="w-full max-w-4xl mx-auto my-8 p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://storage.googleapis.com/intercon_zoe_images/Intercon_Zoe_Argentina.jpg" alt="Card Image" class="card-image" data-sound="https://storage.googleapis.com/intercon_zoe_sounds/latino-loop-2-120-bpm-191631.mp3">
+                <h2 class="text-xl font-semibold mb-4">Watch Me Dancing In Argentina</h2>
+                <p class="text-lg mb-4">Features Intercontinental Zoe, a dynamic YouTuber renowned for his global adventures and cultural immersion. In this captivating video, Zoe embraces the lively dance culture of Argentina, showcasing his moves and connecting with the local traditions. His enthusiastic performance highlights his passion for exploring and celebrating diverse cultures around the world.</p>
+                <a href="#" class="cta-btn">Learn More</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://storage.googleapis.com/intercon_zoe_images/Intercon_Zoe_Brazil_tour.jpg" alt="Card Image" class="card-image" data-sound="https://storage.googleapis.com/intercon_zoe_sounds/helicopter-8030.mp3">
+                <h2 class="text-xl font-semibold mb-4">Sightseeing In Rio de Janeiro</h2>
+                <p class="text-lg mb-4">Join Intercontinental Zoe as he explores the vibrant city of Rio de Janeiro, where he takes you through iconic sights such as the Christ the Redeemer statue.</p>
+                <a href="#" class="cta-btn">Learn More</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://storage.googleapis.com/intercon_zoe_images/Intercon_Zoe_Chile_Easter_Island.jpg" alt="Card Image" class="card-image" data-sound="https://storage.googleapis.com/intercon_zoe_sounds/easter-island-5-minute-md-recording-of-waves-crashing-against-volcanic-ro1-17728.mp3">
+                <h2 class="text-xl font-semibold mb-4">Exploring Mysterious Rapa Nui</h2>
+                <p class="text-lg mb-4">Embark on a captivating journey to the enigmatic Rapa Nui, also known as Easter Island, where ancient mysteries and awe-inspiring landscapes await.</p>
+                <a href="#" class="cta-btn">Learn More</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://storage.googleapis.com/intercon_zoe_images/Intercon_Zoe_Thailand.jpg" alt="Card Image" class="card-image" data-sound="https://storage.googleapis.com/intercon_zoe_sounds/5am-monk-33951.mp3">
+                <h2 class="text-xl font-semibold mb-4">Sawadee krap From Thailand</h2>
+                <p class="text-lg mb-4">Exploring the majestic ruins of Ayutthaya to relaxing on the pristine beaches of Phuket, Thailand's diverse attractions promise unforgettable experiences for every traveler.</p>
+                <a href="#" class="cta-btn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Second Additional Section 
+    <section class="w-full max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Interviews</h2>
+        <p class="text-lg">Content for the second section goes here. This is another area where you can provide more details, resources, or interactive elements.</p>
+    </section> -->
+
+    <footer class="w-full py-4 text-white text-center">
+        <p class="text-lg">
+            <a href="mailto:barberworldtv@gmail.com" class="playfair-display-sc-regular text-white hover:underline">Contact Us</a>
+        </p>
+    </footer>   
+    
+    <audio id="background-audio" src="https://storage.googleapis.com/intercon_zoe_sounds/commercial-aircraft-pre-flight-instructions-56658.mp3" preload="auto"></audio>
+
+     <!-- JavaScript -->
+     <script src="script.js"></script>
+</body>
+</html>
