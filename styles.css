@@ -1,0 +1,27 @@
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    margin: 20px auto;
+  }
+  
+  .responsive-svg {
+    width: 100%;
+    height: auto;
+    fill: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .svg-container {
+      max-width: 75px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .svg-container {
+      max-width: 50px;
+    }
+  }
+  
